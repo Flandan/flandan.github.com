@@ -13,6 +13,16 @@ a {
   color: #227ce8;
 }
 
+.WebGL-output {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+}
+
 .sidebar {
   position: fixed;
   left: 15px;
