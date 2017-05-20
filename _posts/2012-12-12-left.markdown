@@ -2,6 +2,7 @@
 layout: post
 title: Left
 category: posts
+published: true
 ---
 
 Left is a clean, whitespace-happy layout for [Jekyll][jekyll].
@@ -9,6 +10,16 @@ Left is a clean, whitespace-happy layout for [Jekyll][jekyll].
 This is designed to be an easy layout to modify for your own blog. It was
 extracted from [zachholman.com][zh], which means it was battle-hardened from
 years of posting serious blog posts about emoji and swear words.
+
+```python
+import numpy as np
+
+def test:
+	variable = 0
+
+test()
+
+```
 
 You're actually reading an example post right now. See how cool it is? Oh, be
 quiet, you're making me blush.
