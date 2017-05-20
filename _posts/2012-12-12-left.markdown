@@ -12,13 +12,46 @@ extracted from [zachholman.com][zh], which means it was battle-hardened from
 years of posting serious blog posts about emoji and swear words.
 
 ```python
-import numpy as np
+import tflearn
+from tflearn.layers.conv import conv_2d, max_pool_2d
+from tflearn.layers.core import input_data, dropout, fully_connected
+from tflearn.layers.estimator import regression
+from tflearn.layers.normalization import local_response_normalization
+import tensorflow as tf
 
-def test:
-	variable = 0
+def dist_sq(prediction, target):
+    return tf.reduce_mean(tf.square(prediction - target), name='dist_sq')
+    #return tf.reduce_mean(tf.square(prediction[0] - target[0]) + tf.square(prediction[1] - target[1]), name='dist_sq')
 
-test()
+def alexnet(width, height, lr):
+    network = input_data(shape=[None, height, width, 1], name='input')
+    network = conv_2d(network, 96, 11, strides=4, activation='relu')
+    network = max_pool_2d(network, 3, strides=2)
+    network = local_response_normalization(network)
+    network = conv_2d(network, 256, 5, activation='relu')
+    network = max_pool_2d(network, 3, strides=2)
+    network = local_response_normalization(network)
+    network = conv_2d(network, 384, 3, activation='relu')
+    network = conv_2d(network, 384, 3, activation='relu')
+    network = conv_2d(network, 256, 3, activation='relu')
+    network = max_pool_2d(network, 3, strides=2)
+    network = local_response_normalization(network)
+    network = fully_connected(network, 8192, activation='tanh') #4096
+    network = dropout(network, 0.5)
+    network = fully_connected(network, 4096, activation='tanh')
+    network = dropout(network, 0.5)
+    ###
+    network = fully_connected(network, 4096, activation='tanh')
+    network = dropout(network, 0.5)
+    ###
+    network = fully_connected(network, 2, activation='linear')
+    network = regression(network, optimizer='adam',
+                         loss=dist_sq,
+                         learning_rate=lr, name='targets')
 
+    model = tflearn.DNN(network, checkpoint_path='model_alexnet',
+                        max_checkpoints=1, tensorboard_verbose=0, tensorboard_dir='log')
+    return model#, c1
 ```
 
 You're actually reading an example post right now. See how cool it is? Oh, be
