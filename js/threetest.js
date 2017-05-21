@@ -10,7 +10,7 @@
         var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
 
         // create a render and set the size
-        var canvas = document.querySelector("#WebGL-output");
+        var canvas = document.querySelector("canvas");
         var renderer = new THREE.WebGLRenderer({canvas: canvas});
         var webGLRenderer = new THREE.WebGLRenderer();
         webGLRenderer.setClearColor(new THREE.Color(0x000000, 1.0));
