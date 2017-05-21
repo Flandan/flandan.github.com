@@ -10,6 +10,8 @@
         var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
 
         // create a render and set the size
+        var canvas = document.querySelector("#WebGL-output");
+        var renderer = new THREE.WebGLRenderer({canvas: canvas});
         var webGLRenderer = new THREE.WebGLRenderer();
         webGLRenderer.setClearColor(new THREE.Color(0x000000, 1.0));
         webGLRenderer.setSize(window.innerWidth, window.innerHeight);
@@ -23,7 +25,7 @@
         camera.lookAt(new THREE.Vector3(10, 0, 0));
 
         // add the output of the renderer to the html element
-        $("#WebGL-output").append(webGLRenderer.domElement);
+        //$("#WebGL-output").append(webGLRenderer.domElement);
 
         // call the render function
         var step = 0;
