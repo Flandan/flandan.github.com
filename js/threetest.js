@@ -104,10 +104,10 @@
 
         function createParticleSystem(geom) {
             var material = new THREE.ParticleBasicMaterial({
-                color: 0xffffff,
+                color: 0x000000,
                 size: 3,
                 transparent: true,
-                blending: THREE.AdditiveBlending,
+                blending: THREE.SubtractiveBlending,
                 map: generateSprite()
             });
 
