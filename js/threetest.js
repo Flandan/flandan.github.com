@@ -132,7 +132,7 @@
             stats.update();
 
             if (controls.rotate) {
-                knot.rotation.y = step += 0.01;
+                knot.rotation.y = step += 0.001;
             }
 
             // render using requestAnimationFrame
