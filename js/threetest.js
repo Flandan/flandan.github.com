@@ -37,7 +37,7 @@
             this.radius = 60;
             this.tube = 88.2;
             this.radialSegments = 100;
-            this.tubularSegments = 802;
+            this.tubularSegments = 10;
             this.p = 5;
             this.q = 4;
             this.heightScale = 4;
