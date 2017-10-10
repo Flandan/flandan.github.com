@@ -11,7 +11,7 @@
 
         // create a render and set the size
         var canvas = document.querySelector("canvas");
-        var webGLRenderer = new THREE.WebGLRenderer({canvas: canvas, alpha: true});
+        var webGLRenderer = new THREE.WebGLRenderer({canvas: canvas});
         webGLRenderer.setClearColor(new THREE.Color(0xffffff, 1.0));
         webGLRenderer.setSize(window.innerWidth, window.innerHeight);
         webGLRenderer.shadowMapEnabled = true;
