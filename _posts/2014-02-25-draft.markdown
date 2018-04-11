@@ -2,7 +2,6 @@
 layout: post
 title: Sample draft post
 category: posts
-draft: true
 published: true
 ---
 
