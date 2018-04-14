@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Crowd Dynamics
+title: Exploring Crowd Dynamics In Restrictive Spaces
 category: posts
 published: true
 ---
