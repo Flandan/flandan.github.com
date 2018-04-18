@@ -5,4 +5,4 @@ category: posts
 published: true
 ---
 
-# Spirals!
+# Spirals! - Coming soon
