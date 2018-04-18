@@ -79,7 +79,10 @@ A very basic room evacuation scenario was devised and it was decided to look at 
 
 # Analysis
 ### In Engine
-<img src="https://github.com/Flandan/flandan.github.io/blob/master/images/bound_attractor.png?raw=true" width="500" height="500">
+<div id="engine" style="display:inline-block;">
+  <img src="http://flandan.github.io/images/Tools.png" style="float:left;" alt="Experiment 1" width="400" height="400">
+  <img src="https://github.com/Flandan/flandan.github.io/blob/master/images/bound_attractor.png?raw=true" width="400" height="400">
+</div>
 
 Using the realtime graphics features of the [SFML (Simple Fast Multimedia Library)](https://www.sfml-dev.org/)  agents, walls, spawn boxes and attractor zones were rendered per frame of simulation. Local density and pressure were also rendered on a colourised grid according to the occupying agents. Helper tools with snap to grid functionality were added to enable experimental repeatability in lieu of a save system. A graphical user interface for initial conditions and various simulation options was added using [SFGUI (Simple Fast Graphical User Interface)](https://github.com/TankOs/SFGUI), a simple but rich ui library built for use with SFML.
 
