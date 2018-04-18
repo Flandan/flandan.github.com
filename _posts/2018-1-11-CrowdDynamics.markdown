@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Exploring Crowd Dynamics In Restrictive Spaces (C++/Python)
+title: Exploring Crowd Dynamics (Thesis) [C++/Python]
 category: posts
 published: true
 ---
 [![alt text here](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/The_way_to_Jamarat_Bridge_3.JPG/1280px-The_way_to_Jamarat_Bridge_3.JPG "2015 Mina stampede")](https://en.wikipedia.org/wiki/2015_Mina_stampede)
-# Crowd Dynamics (An academic investigation)
+# Crowds
 Crowds are an example of a complex system that displays emergent behaviour. Such behaviour is a result of the aggregation of interactions between many individuals. Understanding crowd dynamics is very important in a growing society and can have wide reaching benefits in design, safety and transport. Understanding group behaviour has even further potential for applications involving animal behaviour, cell growth and emerging fields such as swarm intelligence. 
 
 # Goals
