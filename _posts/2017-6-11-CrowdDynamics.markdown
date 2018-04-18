@@ -37,7 +37,7 @@ When the question of what Language to use arose it was clear that there was no p
   Your browser does not support the video tag.
   </video>
 
-Basic walls were implemented by applying force perpendicular to the wall vector when an agent came within range. This is a very simplified solution that works for high repulsive forces and low density of agents. It howver breaks down as density increses and the inter-agent forces begin to build up. There is room for a more advanced solving method here but for most of our purposes it served well enough.
+<p>Basic walls were implemented by applying force perpendicular to the wall vector when an agent came within range. This is a very simplified solution that works for high repulsive forces and low density of agents. It howver breaks down as density increses and the inter-agent forces begin to build up. There is room for a more advanced solving method here but for most of our purposes it served well enough.</p>
 </div>
 
 ### Spawn Zones
@@ -47,7 +47,7 @@ Basic walls were implemented by applying force perpendicular to the wall vector 
   Your browser does not support the video tag.
   </video>
 
-If you want control over initial conditions you need to be able to define an initial zone for randomly placing your agents is essential. This was acheched with "spawn zones" in which the agents are equally split and randomly distributed within each zone according to a gaussian distribution.
+<p>If you want control over initial conditions you need to be able to define an initial zone for randomly placing your agents is essential. This was acheched with "spawn zones" in which the agents are equally split and randomly distributed within each zone according to a gaussian distribution.</p>
 </div>
 
 
@@ -58,7 +58,7 @@ If you want control over initial conditions you need to be able to define an ini
   Your browser does not support the video tag.
   </video>
 
-To give some incentive to move to a goal, attractors were added. Each attractor adds a bias to the agents desired heading according to their offset. The Attraction is only active within a zone of attraction - a hand placed rectangular zone acting as a vector field. Again, a simple solution but enabling many possibilities to define senarios such as evacuation.
+<p>To give some incentive to move to a goal, attractors were added. Each attractor adds a bias to the agents desired heading according to their offset. The Attraction is only active within a zone of attraction - a hand placed rectangular zone acting as a vector field. Again, a simple solution but enabling many possibilities to define senarios such as evacuation.</p>
 </div>
 
 # Scenario
@@ -99,7 +99,7 @@ Using the realtime graphics features of the [SFML (Simple Fast Multimedia Librar
 
 The C++ engine was modified to save out both images rendered at certain timestamps and detailed point cloud data for analysis in Python. This gave huge flexibility in investigation of the data and presenting results, both things that Python and partictularly packages such as numpy, scipy and matplotlib are very good at.
 
-### Conclusion
+# Conclusion
 While the results were interesting it was clear that the chosen scenario was slightly flawed and some of the choices for analysis and implementation were also not totally fit for purpose. Given the flexibilty that the tools allow, a much more intricate scenario with better defined investigation measures would have almost certainly been a better option. However, this was an academic project and due to time contraints this was what we had to follow through with. The use of C++ and Python was an excellent choice but again, learning the nuances of two languages for an academic project like this was another time burner. On a more posative note, it was clear that having an interactive UI was invaluable in getting a feel for how a model would behave and react in different configurations. Fields for noise, speed and repulsion parameters could all be changed on the fly and spaces entirely redesigned with only a few clicks of the mouse instead of editing a config file and rerunning as is so often the case with these kind of projects. I would like to see a move away from purely commandline simulations for scenarios where visual feedback is so important in investigation and understanding. I look forward to developing this idea as I move forward.
 
 I also look forward to the long overdue refactoring this project is in great need of. Source code will be on its way to [my github](https://github.com/Flandan) soon!
