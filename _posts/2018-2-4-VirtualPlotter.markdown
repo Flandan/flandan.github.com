@@ -60,10 +60,10 @@ Images can be imported and used as a backdrop for line drawings.
 Post-processing options are available, including basic supersampling AA and a simple wobble effect that was created to test the post-processing framework.
 # Future Improvements
 Some features that I plan to develop are: 
-*Loading/saving of in-engine drawings.
-*Support for video backdrops
-*Support for other formats including SVG.
-*Conversion of images to plt in-engine.
-*Modular effects
+* Loading/saving of in-engine drawings.
+* Support for video backdrops
+* Support for other formats including SVG.
+* Conversion of images to plt in-engine.
+* Modular effects
 # Outcome
 This project was about finding an interesting way to display graphical information, while gaining experience with C++. During development I found many good applications for the plotter project along the way. While I think theres a lot of scope for feature creep in this project, I don't believe that is so much of a problem, pushing me to develop a more modular approach that other projects will benifit from. I still consider this project very work-in-progress with many features planned.
