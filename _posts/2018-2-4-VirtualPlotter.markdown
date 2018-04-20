@@ -46,6 +46,8 @@ The engine supports basic file navigation via a dropdown menu populated with fil
   Text here!
 </div>
 
+$`v = v^0 + at`$
+
 ### Ink Spread
 <div id="vid" style="display:inline-block; filter:invert(100%);">
   <video width="500" height="400" style="float:left;" loop autoplay>
