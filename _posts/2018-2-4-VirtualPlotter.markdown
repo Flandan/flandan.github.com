@@ -4,7 +4,6 @@ title: Virtual Plotter
 category: posts
 published: true
 ---
-# Plotter
 <div id="vid" style="display:inline-block; filter:invert(100%);">
   <video width="1000" height="1000" style="float:left;" loop autoplay>
     <source src="http://flandan.github.io/images/FullPlot.mp4" type="video/mp4">
@@ -30,7 +29,7 @@ Driven by [SFML (Simple Fast Multimedia Library)](https://www.sfml-dev.org/) the
   Your browser does not support the video tag.
   </video>
 
-  Here is a hand drawn line diagram of a circuit that has been converted from JPEG to PLT via [Convertio](https://convertio.co/) plotted in engine. This gives a good representation of what kind of output can be acheived with very minimal effort.
+Here is a hand drawn line diagram of a circuit that has been converted from JPEG to PLT via [Convertio](https://convertio.co/) plotted in engine. This gives a good representation of what kind of output can be acheived with very minimal effort.
 
 </div>
 
