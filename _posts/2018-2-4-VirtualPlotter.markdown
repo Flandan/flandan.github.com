@@ -29,9 +29,9 @@ Driven by [SFML (Simple Fast Multimedia Library)](https://www.sfml-dev.org/) the
   Your browser does not support the video tag.
   </video>
 
-Here is a hand drawn line diagram of a circuit that has been converted from JPEG to PLT via [Convertio](https://convertio.co/) plotted in engine. This gives a good representation of what kind of output can be acheived with very minimal effort.
-
 </div>
+
+Here is a hand drawn line diagram of a circuit that has been converted from JPEG to PLT via [Convertio](https://convertio.co/) plotted in engine. This gives a good representation of what kind of output can be acheived with very minimal effort.
 
 ### File System
 The engine supports basic file navigation via a dropdown menu populated with files placed in the resources folder. This feature is provided by the [Boost Filesystem Library](https://www.boost.org/doc/libs/1_67_0/libs/filesystem/doc/index.htm).
