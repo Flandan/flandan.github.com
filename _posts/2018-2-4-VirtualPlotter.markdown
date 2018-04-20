@@ -5,7 +5,7 @@ category: posts
 published: true
 ---
 <div id="vid" style="display:inline-block; filter:invert(100%);">
-  <video width="1000" height="1000" style="float:left;" loop autoplay>
+  <video width="800" height="800" style="float:left;" loop autoplay>
     <source src="http://flandan.github.io/images/FullPlot.mp4" type="video/mp4">
   Your browser does not support the video tag.
   </video>
